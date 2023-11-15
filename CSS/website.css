@@ -1304,9 +1304,61 @@
       color: var(--first-color);
     }
 
+    .home {
+      padding-bottom: 0;
+    }
+
+    .home-container {
+      padding-top: 5rem;
+      column-gap: 2rem;
+    }
+
+    .home-data {
+      padding-bottom: 4rem;
+    }
+
+    .home-title {
+      margin-bottom: 2rem;
+    }
+
+    .home-description,
+    .home-search {
+      margin-bottom: 3rem;
+    }
+
+    .home-value {
+      column-gap: 3.0rem;
+    }
+
+    .home-orbe {
+      width: 504px;
+      height: 611px;
+      border-radius: 256px 256px 0 0;
+    }
+
+    .home-img {
+      width: 472px;
+      height: 634px;
+      border-radius: 236px 236px 12px 12px;
+      bottom: -2.5rem;
+    }
+
     .logos-container {
       grid-template-columns: repeat(4, max-content);
       justify-content: center;
+    }
+
+    .logos-img img{
+      height: 70px;
+    }
+
+    .popular-container {
+      padding-top: 3rem;
+    }
+
+    .popular-card {
+      width: 320px;
+      padding: .75rem .75rem 2rem;
     }
 
   }
