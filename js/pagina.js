@@ -61,8 +61,8 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 // HOME SLIDER //
+
 const homeSlider = document.querySelector("[data-home-slider]");
 const homeSliderItems = document.querySelectorAll("[data-home-slider-item]");
 const homeSliderPrevBtn = document.querySelector("[data-prev-btn]");
@@ -117,3 +117,26 @@ addEventOnElements([homeSliderNextBtn, homeSliderPrevBtn], "mouseover", function
 addEventOnElements([homeSliderNextBtn, homeSliderPrevBtn], "mouseout", autoSlide);
 
 window.addEventListener("load", autoSlide);
+
+// PARALLAX EFFECT //
+
+const parallaxItems = document.querySelectorAll("[data-parallax-item]");
+
+let x, y;
+
+window.addEventListener("mousemove", function (event) {
+
+  x = (event.clientX / window.innerWidth * 10) - 5;
+  y = (event.clientY / window.innerHeight * 10) - 5;
+
+  // reverse the number eg. 20 -> -20, -5 -> 5
+  x = x - (x * 2);
+  y = y - (y * 2);
+
+  for (let i = 0, len = parallaxItems.length; i < len; i++) {
+    x = x * Number(parallaxItems[i].dataset.parallaxSpeed);
+    y = y * Number(parallaxItems[i].dataset.parallaxSpeed);
+    parallaxItems[i].style.transform = `translate3d(${x}px, ${y}px, 0px)`;
+  }
+
+});
