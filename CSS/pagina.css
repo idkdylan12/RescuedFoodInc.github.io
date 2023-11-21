@@ -392,14 +392,14 @@ body.nav-active {
 
 .has-before,
 .has-after {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .has-before::before,
 .has-after::after {
-  content: "";
-  position: absolute;
+    content: "";
+    position: absolute;
 }
 
 .section {
@@ -482,6 +482,8 @@ body.nav-active {
     place-content: center;
     justify-items: center;
     transition: var(--transition-2);
+
+    display: none;
 }
 
 .preload > * {
@@ -601,10 +603,10 @@ body.nav-active {
     background-color: var(--white);
     margin-block: 4px;
     transform-origin: left;
-    animation: menuBtn 400ms ease-in-out alternate infinite;
+    animation: coursesBtn 400ms ease-in-out alternate infinite;
 }
 
-@keyframes menuBtn {
+@keyframes coursesBtn {
 
     0% {
         transform: scaleX(1);
@@ -960,56 +962,171 @@ body.nav-active {
 }
 
 /* ABOUT */
-.about .section-text { margin-block: 15px 30px; }
+.about .section-text { 
+    margin-block: 15px 30px; 
+}
 
 .about .btn {
-  margin-inline: auto;
-  margin-block-start: 26px;
+    margin-inline: auto;
+    margin-block-start: 26px;
 }
 
 .about .container {
-  display: grid;
-  gap: 120px;
+    display: grid;
+    gap: 120px;
 }
 
 .about-banner {
-  position: relative;
-  margin-block-end: 120px;
+    position: relative;
+    margin-block-end: 120px;
 }
 
-.about-banner > .w-100 { padding-inline-start: 50px; }
+.about-banner > .w-100 { 
+    padding-inline-start: 50px; 
+}
 
-.about .about-img { position: absolute; }
+.about .about-img { 
+    position: absolute; 
+}
 
-.about .about-img::before { z-index: -1; }
+.about .about-img::before { 
+    z-index: -1; 
+}
 
 .about .about-img-1 {
-  bottom: -120px;
-  left: 0;
-  width: 150px;
-  padding-block: 50px;
+    bottom: -120px;
+    left: 0;
+    width: 150px;
+    padding-block: 50px;
 }
 
 .about .about-img-2 {
-  top: -65px;
-  right: 0;
-  overflow: hidden;
+    top: -65px;
+    right: 0;
+    overflow: hidden;
 }
 
 .about .about-img-1::before {
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
-  background-image: url('../img/img-pattern.svg');
-  background-repeat: repeat;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    background-image: url('../img/img-pattern.svg');
+    background-repeat: repeat;
 }
 
 .about .about-img-2::before {
-  inset: 0;
-  background-image: url('../img/RESCUED\ FOOD\ -\ A-BADGE-2.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  animation: rotate360 15s linear infinite;
+    inset: 0;
+    background-image: url('../img/RESCUED\ FOOD\ -\ A-BADGE-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: rotate360 15s linear infinite;
+}
+
+/* CEO */
+.ceo-content { 
+    padding-block: 70px; 
+}
+
+.ceo .abs-img {
+    margin-inline: auto;
+    margin-block-end: 12px;
+}
+
+.ceo .section-text { 
+    margin-block: 16px 40px; 
+}
+
+.ceo .btn { 
+    margin-inline: auto; 
+}
+
+/* COURSES */
+.courses .section-title { 
+    margin-block-end: 40px; 
+}
+
+.courses .grid-list { 
+    margin-block-end: 50px; 
+}
+
+.courses-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hover\:card .card-banner { 
+    background-color: var(--gold-crayola); 
+}
+
+.hover\:card .card-banner .img-cover { 
+    width: 50px;
+    height: 50px;
+    transition: var(--transition-2); 
+}
+
+.hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.courses-card .card-banner {
+    flex-shrink: 0;
+    border-radius: 14px;
+}
+
+.courses-card .card-title { 
+    transition: var(--transition-1); 
+}
+
+.courses-card .card-title:is(:hover, :focus-visible) { 
+    color: var(--gold-crayola); 
+}
+
+.courses-card .badge {
+    background-color: var(--gold-crayola);
+    color: var(--eerie-black-1);
+    font-family: var(--fontFamily-forum);
+    max-width: max-content;
+    line-height: var(--lineHeight-6);
+    text-transform: uppercase;
+    padding-inline: 10px;
+    margin-block-start: 10px;
+}
+
+.courses-card .span {
+    color: var(--gold-crayola);
+    margin-block: 10px;
+}
+
+.courses-card .card-text {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-4);
+}
+
+.courses-text .span {
+    display: inline-block;
+    color: var(--gold-crayola);
+}
+
+.courses .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.courses .shape {
+    display: block;
+    width: 70%;
+}
+
+.courses .shape-2 {
+    top: 0;
+    left: 0;
+}
+
+.courses .shape-3 {
+    bottom: 0;
+    right: 0;
 }
