@@ -322,11 +322,6 @@ body.nav-active {
     object-fit: cover;
 }
 
-.img-cover-2 {
-    height: 100%;
-    object-fit: cover;
-}
-
 .section-subtitle {
     position: relative;
     color: var(--gold-crayola);
@@ -1684,7 +1679,7 @@ body.nav-active {
     }
 
     .ceo-banner {
-        width: 600px;
+        width: 680px;
     }
 
     .ceo-content .wrapper {
