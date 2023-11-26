@@ -158,7 +158,7 @@ body {
 }
 
 body.loaded {
-    overflow: hidden;
+    overflow: visible;
 }
 
 body.nav-active {
@@ -317,12 +317,6 @@ body.nav-active {
 
 .img-cover {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img-cover-2 {
-    width: 680px;
     height: 100%;
     object-fit: cover;
 }
@@ -1220,55 +1214,6 @@ body.nav-active {
     color: #f021b2;
 }
 
-/* PAGINATION */
-.pagination {
-    text-align: center;
-    margin: 30px 30px 60px;
-    user-select: none;
-}
-
-.pagination li {
-    display: inline-block;
-    margin: 5px;
-}
-
-.pagination li a{
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 45px;
-}
-
-.previous-page, .next-page {
-    background: #f7ab15;
-    width: 80px;
-    border-radius: 45px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.previous-page:hover {
-    transform: translateX(-5px);
-}
-
-.next-page {
-    transform: translateX(5px);
-}
-
-.current-page, .dots {
-    background: #393939;
-    width: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.active {
-    background: #f7ab15;
-}
-
-.disable {
-    background: #393939;
-}
-
 /* FOOTER */
 .footer {
     background-color: var(--davys-grey);
@@ -1331,9 +1276,14 @@ body.nav-active {
 }
 
 /* MEDIA QUERIES */
+
 /* Responsive for langer than 575px screen */
 @media (min-width: 575px) {
 
+    /* CUSTOM PROPERTY */
+    :root {
+        --fontSize-body-2: 2rem;
+    }
 
     /* TOPBAR */
     .topbar {
@@ -1419,6 +1369,11 @@ body.nav-active {
 /* Responsive for langer than 768px screen */
 @media (min-width: 768px) {
 
+    /* REUSED STYLE */
+    .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* HEADER */
     .navbar-list {
         margin-inline: 30px;
@@ -1445,7 +1400,7 @@ body.nav-active {
     }
 
     .home .slider-btn.prev {
-        left: 100px;
+        left: 30px;
     }
 
     .home .slider-btn.next {
@@ -1461,6 +1416,14 @@ body.nav-active {
 
 /* Responsive for langer than 992px screen */
 @media (min-width: 992px) {
+
+    /* CUSTOM PROPERTY */
+    :root {
+
+        /* SPACING */
+        --section-space: 100px;
+
+    }
 
     /* TOPBAR */
     .topbar-item:not(.link) {
@@ -1488,6 +1451,14 @@ body.nav-active {
 
 /* Responsive for langer than 1200px screen */
 @media (min-width: 1200px) {
+
+    /* CUSTOM PROPERTY */
+    :root {
+
+        /* TYPOGRAPHY */
+        --fontSize-title-2: 2.5rem;
+
+    }
 
     /* TOPBAR */
     .topbar .container {
@@ -1557,9 +1528,6 @@ body.nav-active {
 
     /* HOME */
     .home {
-        width: 1410px;
-        height: 880px;
-        right: 50px;
         transform: scale(1);
     }
 
