@@ -1249,15 +1249,15 @@ body.nav-active {
     transform: translateX(.25rem);
 }
 
-.grid-list .course-item:nth-child(1) .course-tag {
+.course-item:nth-child(1) .course-tag {
     background-color: #f7ab15;
 }
 
-.grid-list .course-item:nth-child(1) .course-discount {
+.course-item:nth-child(1) .course-discount {
     color: #f7ab15;
 }
 
-.grid-list .course-item:nth-child(2) .course-tag {
+.course-item:nth-child(2) .course-tag {
     background-color: #ec1839;
 }
 
