@@ -1466,7 +1466,7 @@ body.nav-active {
         top: 0;
         left: 0;
         width: 100%;
-        padding-block: 10px;
+        padding-block: 5px;
         border-block-end: 1px solid var(--white-alpha-20);
         z-index: 4;
         transition: var(--transition-1);
@@ -1514,7 +1514,7 @@ body.nav-active {
 
     /* HEADER */
     .header {
-        top: 21px;
+        top: px;
     }
 
     .header .active {
