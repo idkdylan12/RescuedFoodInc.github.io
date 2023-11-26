@@ -2,10 +2,7 @@
 
 :root {
 
-    /**
-     * colors
-     */
-
+    /* COLORS */
     --orange-crayola: rgb(247, 176, 53);
     --dark-cornflower-blue_a7: hsla(214, 88%, 27%, 0.07);
     --white: hsla(0, 0%, 100%, 1);
@@ -23,10 +20,7 @@
     --blue-crayola: hsla(219, 72%, 56%, 1);
     --black-coral: hsla(220, 12%, 43%, 1);
 
-    /**
-     * typography
-     */
-
+    /* TYPOGRAPHY */
     --ff-manrope: 'Manrope', sans-serif;
 
     --fs-1: calc(2.7rem + 1.38vw);
@@ -40,48 +34,29 @@
 
     --fw-700: 700;
 
-    /** 
-     * spacing
-     */
-
+    /* SPACING */
     --section-padding: 90px;
 
-    /**
-     * box shadow
-     */
-
+    /* BOX SHADOW */
     --shadow-1: 0 0 20px hsla(216, 14%, 14%, 0.05);
     --shadow-2: 0 0 0 0.05rem hsla(214, 88%, 27%, 0.08), 0 0 1.25rem hsla(216, 14%, 14%, 0.06);
     --shadow-3: 0 0 1.25rem hsla(216, 14%, 14%, 0.04);
 
-    /**
-     * border radius
-     */
-
+    /* BORDER RADIUS */
     --radius-circle: 50%;
     --radius-pill: 100px;
     --radius-10: 10px;
     --radius-8: 8px;
     --radius-6: 6px;
 
-    /**
-     * transition
-     */
-
+    /* TRANSITION */
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease;
     --transition-3: 0.3s ease-in-out;
 
 }
 
-
-
-
-
-/*-----------------------------------*\
-    #RESET
-  \*-----------------------------------*/
-
+/* BASE */
 *,
 *::before,
 *::after {
@@ -168,14 +143,7 @@ body.nav-active {
     background-color: hsl(0, 0%, 70%);
 }
 
-
-
-
-
-/*-----------------------------------*\
-    #REUSED STYLE
-  \*-----------------------------------*/
-
+/* REUSED STYLE */
 .container {
     padding-inline: 16px;
 }
@@ -1002,10 +970,6 @@ body.nav-active {
     margin-block-start: 40px;
 }
 
-/*-----------------------------------*\
-    #FOOTER
-  \*-----------------------------------*/
-
 /* FOOTER */
 .footer {
     background-color: var(--davys-grey);
@@ -1097,18 +1061,11 @@ body.nav-active {
     visibility: visible;
 }
 
-/* MEDIA QUARIES */
-
-/**
-   * responsive for large than 575px screen
-   */
-
+/* MEDIA QUERIES */
+/* Responsive for large than 575px screen */
 @media (min-width: 575px) {
 
-    /**
-     * REUSED STYLE
-     */
-
+    /* REUSED STYLE */
     .container {
         max-width: 540px;
         width: 100%;
@@ -1187,44 +1144,26 @@ body.nav-active {
         transform: scale(0.7);
     }
 
-    ** * EVENT */ .event .container {
+    /* EVENT */
+    .event .container {
         max-width: 420px;
         margin-inline: auto;
     }
 
-
 }
 
-
-
-
-
-/**
-   * responsive for large than 768px screen
-   */
-
+/* Responsive for large than 768px screen */
 @media (min-width: 768px) {
 
-    /**
-     * CUSTOM PROPERTY
-     */
-
+    /* CUSTOM PROPERTY */
     :root {
 
-        /**
-       * spacing
-       */
-
+        /* SPACING */
         --section-padding: 120px;
 
     }
 
-
-
-    /**
-     * REUSED STYLE
-     */
-
+    /* REUSED STYLE */
     .container {
         max-width: 720px;
     }
@@ -1242,8 +1181,6 @@ body.nav-active {
         width: calc(50% - 20px);
         margin-inline: auto;
     }
-
-
 
     /* HEADER */
     .navbar-list {
@@ -1283,35 +1220,19 @@ body.nav-active {
         color: var(--black);
     }
 
-
-
-
-    /**
-     * SERVICE
-     */
-
+    /* SERVICE */
     .service .section-title {
         max-width: 30ch;
         margin-inline: auto;
     }
 
-
-
-    /**
-     * ABOUT
-     */
-
+    /* ABOUT */
     .about .container {
         grid-template-columns: 1fr 0.7fr;
         align-items: center;
     }
 
-
-
-    /**
-     * FEATURE
-     */
-
+    /* FEATURE */
     .feature .container {
         grid-template-columns: 0.7fr 1fr;
         align-items: center;
@@ -1323,20 +1244,10 @@ body.nav-active {
 
 }
 
-
-
-
-
-/**
-   * responsive for large than 992px screen
-   */
-
+/* Responsive for large than 992px screen */
 @media (min-width: 992px) {
 
-    /**
-     * REUSED STYLE
-     */
-
+    /* REUSED STYLE */
     .container {
         max-width: 960px;
     }
@@ -1354,8 +1265,6 @@ body.nav-active {
         width: 100%;
     }
 
-
-
     /* TOPBAR */
     .topbar-item:not(.link) {
         display: flex;
@@ -1365,32 +1274,17 @@ body.nav-active {
         margin-inline-end: auto;
     }
 
-
-
-    /**
-     * FOOTER
-     */
-
+    /* FOOTER */
     .footer .grid-list {
         grid-template-columns: repeat(4, 1fr);
     }
 
 }
 
-
-
-
-
-/**
-   * responsive for large than 1200px screen
-   */
-
+/* Responsive for large than 1200px screen */
 @media (min-width: 1200px) {
 
-    /**
-     * REUSED STYLE
-     */
-
+    /* REUSED STYLE */
     .container,
     :is(.service, .event) .container {
         max-width: 1200px;
@@ -1398,8 +1292,6 @@ body.nav-active {
         margin-inline: auto;
         max-width: 1140px;
     }
-
-
 
     /* TOPBAR */
     .topbar .container {
@@ -1467,21 +1359,12 @@ body.nav-active {
         margin-inline-start: 0;
     }
 
-
-
-
-    /**
-     * SERVICE
-     */
-
+    /* SERVICE */
     .service .grid-list {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /**
-     * FOOTER
-     */
-
+    /* FOOTER */
     address.footer-text {
         padding-inline-end: 100px;
         margin-block-end: 16px;
@@ -1489,20 +1372,10 @@ body.nav-active {
 
 }
 
-
-
-
-
-/**
-   * responsive for large than 1400px screen
-   */
-
+/* Responsive for large than 1400px screen */
 @media (min-width: 1400px) {
 
-    /**
-     * REUSED STYLE
-     */
-
+    /* REUSED STYLE */
     .container {
         max-width: 1320px;
     }
@@ -1512,10 +1385,7 @@ body.nav-active {
         margin-inline: auto;
     }
 
-    /**
-     * FEATURE
-     */
-
+    /* FEATURE */
     .feature-list {
         grid-template-columns: 1fr 1fr;
     }

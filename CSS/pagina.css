@@ -21,12 +21,9 @@
     --black-alpha-80: hsla(0, 0%, 0%, 0.8);
     --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
-
     /* GRADIENT COLOR */
     --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
     --gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
-
-    /* TYPOGRAPHY */
 
     /* FONT-FAMILY */
     --fontFamily-forum: 'Poppins', sans-serif;
@@ -1077,7 +1074,7 @@ body.nav-active {
     margin-inline: auto; 
 }
 
-/* GUIDES */
+/* COURSES */
 .courses :is(.section-subtitle, .section-title) {
     text-align: center;
 }
@@ -1450,7 +1447,10 @@ body.nav-active {
 
     /* CUSTOM PROPERTY */
     :root {
+
+        /* FONT-SIZE */
         --fontSize-body-2: 2rem;
+
     }
 
     /* REUSED STYLE */
@@ -1513,10 +1513,6 @@ body.nav-active {
     }
 
     /* HEADER */
-    .header {
-        top: px;
-    }
-
     .header .active {
         top: 0;
     }
@@ -1718,7 +1714,7 @@ body.nav-active {
     /* CUSTOM PROPERTY */
     :root {
 
-        /* TYPOGRAPHY */
+        /* FONT-SIZE */
         --fontSize-title-2: 2.5rem;
 
     }
